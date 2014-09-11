@@ -20,6 +20,7 @@ def calc_assessment_value(property_value):
 def calc_property_tax(property_value):
     property_tax_rate = 0.64
     property_tax_increment = 100
+    #using integer division to drop remainder
     return (int(calc_assessment_value(property_value) / property_tax_increment)) * property_tax_rate
 
 
